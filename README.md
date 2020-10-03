@@ -6,15 +6,28 @@ NASA Space Apps 2020 -VA
  Wildfires happens because of heat and not enough rain. For example; in California there were wildfires for three days and within las two days; topical stome came in and help the sitution come down, and this is one of many example of natural disasters. For more information please see the database. <!California's Nightmare Fire Season Continues. (n.d.). Retrieved October 03, 2020, from https://earthobservatory.nasa.gov/images/147363/californias-nightmare-fire-season-continues-->
 </body>
 
-SET @SQLSentence = 'SELECT name,state_desc ,create_date,collation_name FROM sys.databases'
+CREATE DATABASE <database_name>
 
-EXEC sp_TabletoHTML @stTable = @SQLSentence,
-	@RawTableStyle = @st OUTPUT
- 
- SET @SQLSentence = 'SELECT name,state_desc ,create_date,collation_name FROM sys.databases'
+CREATE TABLE <tablename>
+(
+    <columnname1> <datatype> <constraint>,
+    <columnname2> <datatype> <constraint>,
+    <columnname3> <datatype> <constraint>
+)
+	    bcp dbname..tablename format nul -c -x -f exportformatfilename.xml -S servername\sqlinstance -T -t \t -r \n
+bcp dbname..tablename in datafilename.tsv -f exportformatfilename.xml -S servername\sqlinstancename -U username -P password -b block_size_to_move_in_single_attempt -t \t -r \n
+	    
+SET DATEFORMAT ymd;
 
-EXEC sp_TabletoHTML @stTable = @SQLSentence,
-	@RawTableStyle = @st OUTPUT
+BULK INSERT <tablename>
+FROM
+'<datafilename>'
+WITH
+(
+    FirstRow = 2,
+    FIELDTERMINATOR = ',', --this should be column separator in your data
+    ROWTERMINATOR = '\n'   --this should be the row separator in your data
+)
 
 <body>
 <h1> Solution</h1>
