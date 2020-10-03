@@ -5,6 +5,7 @@ NASA Space Apps 2020 -VA
 <p> First let's find out the sites where is the natural disasters are happening around the earth and how many times a year</p>
  Wildfires happens because of heat and not enough rain. For example; in California there were wildfires 
 
+
 <h2> Solution</h2>
 <p> We would send drom to the site to take all the pictures and with some tools to take samples around the area as need it.
 Second after looking at the pictures try to find a solution. 
