@@ -1,7 +1,8 @@
 # Happy-Earth
 NASA Space Apps 2020 -VA
 <body>
-<h2> First let's find out the sites where is the natural disasters are happening around the earth and how many times a year</h2>
+ <h1> Problem and a reason</h1>
+<p> First let's find out the sites where is the natural disasters are happening around the earth and how many times a year</p>
 
 <h2> Solution</h2>
 
