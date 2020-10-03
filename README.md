@@ -7,7 +7,8 @@ NASA Space Apps 2020 -VA
 </body>
 
 <! Start of the codes to the server to the database -->
-CREATE DATABASE <database_name>
+
+<! < CREATE DATABASE <database_name>
 
 CREATE TABLE <tablename>
 (
@@ -26,7 +27,7 @@ WITH
     FirstRow = 2,
     FIELDTERMINATOR = ',', --this should be column separator in your data
     ROWTERMINATOR = '\n'   --this should be the row separator in your data
-)
+) -->
 
 <! End of the codes to the server to the database -->
 
