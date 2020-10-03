@@ -12,6 +12,6 @@ NASA Space Apps 2020 -VA
 Second after looking at the pictures try to find a solution. 
 For an example buld a machine that collects water from the flood locations and then take it to the area where wild fire happens and store the machine at the site.</p>
 <picture>
-<img src="C:\Users\simra\OneDrive\Documents\Project\Water Tank.png" alt="Water Tank.png" style="width:auto;">
+ 
 </picture>
 </body>
