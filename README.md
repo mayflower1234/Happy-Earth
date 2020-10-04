@@ -12,5 +12,5 @@ Wildfires happens because of heat and not enough rain. For example; in Californi
 # Solution
 #### We would send drone to the site to take all the pictures and with some tools to take samples around the area as needed.
 #### Second after looking at the pictures try to find a solution. 
-###### For an example buld a machine that collects water from the flood locations and then take it to the area where wild fire happens and store the machine at the site.
+###### For an example build a machine that collects water from the flood locations and then take it to the area where wild fire happens and store the machine at the site.
 
