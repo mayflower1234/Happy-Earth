@@ -8,7 +8,7 @@ NASA Space Apps 2020 -VA
 <picture>
 <img scr= "C:\Users\simra\OneDrive\Documents\Hackathon\NASA 2020\Flood 2.png" alt= "C:\Users\simra\OneDrive\Documents\Hackathon\NASA 2020\Flood 2.png" width ="300" height ="222">
  
-<img scr= "C:\Users\simra\OneDrive\Documents\Hackathon\NASA 2020\Machine useage.png" alt= "C:\Users\simra\OneDrive\Documents\Hackathon\NASA 2020\Machine useage.png" width ="300" height ="222">
+<img scr= "C:\Users\simra\OneDrive\Documents\Hackathon\NASA 2020\Machine useage.png" alt= "Flood 2.png" width ="300" height ="222">
 <img scr= "C:\Users\simra\OneDrive\Documents\Hackathon\NASA 2020\System Process.png" alt= "C:\Users\simra\OneDrive\Documents\Hackathon\NASA 2020\System Process.png" width ="300" height ="222">
 
  
