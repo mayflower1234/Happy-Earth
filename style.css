@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0; 
+  }
+  body{
+      background-color:#a8dadc;
+      color: #431B0F;
+      font-size: smaller;
+  }
+  .btn{
+      opacity: 0.85;
+    background-color: #a8dadc;
+    color: #431B0F;
+    border-color: #219ebc;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+  align-content: center;
+  justify-content: center;
+  vertical-align: middle;
+  margin: 0.25rem;
+  }
+  .btn::hover{
+    color: #431B0F;
+    border-color: #cb7264;
+    background-color: #C9CBA3!important;
+  }
+  
+  .header, .navbar, .custom, .bg-custom{
+      color: #431B0F;
+      background-color: #98c1d9 !important;
+      margin-bottom: 2%;
+  }
+  .search-form, button, .btn-navbar{
+    color: #431B0F;
+    border-color: #1d3557;
+    background-color: #98c1d9;
+  }
+  a{
+    color: #431B0F;
+  }
+  .btn-navbar:hover{
+    color: #431B0F;
+    border-color: #1d3557;
+    background-color: #C9CBA3;
+  }
+  .col-md-2, .col-md-6, .row{
+      align-content: center!important;
+      justify-content: center!important;
+  }
+  .liked-recipes-button, .shopping-list-button, .website-logo, .search-form{
+    margin: 1rem;
+    align-content: center;
+  }
+  .content-container{
+    display: block;
+    margin-bottom: 20%;
+  }
+.row{
+    margin: 2rem;
+}
+  .search-content, .results-content{
+    background-color: #f1faee;
+    text-align: start;
+    width: 100%;
+    padding: 0.5rem;
+  }
+  .results-content{
+    border: none;
+  }
+  .results-list{
+    list-style: none;
+  }
+  .fa{
+    padding: 0.25rem;
+  }
+  h1, h2, h3, h4{
+    color: #723D46;
+    font-size: xx-small;
+  }
+  ul{
+    list-style: none;
+    background-color: none;
+  }
+  img{
+    align-content: center;
+    justify-content: center;
+    width: 50%;
+    height: auto;
+  }
+  .list-group-item{
+    background-color: transparent;
+    list-style: none;
+    border: none;
+  }
+  .no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  ul, .list-group, .list-group-flush{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  
+  }
+  h1, h2, h3, h4, h5, h6{
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+  .results-page-buttons{
+  padding: 0.75rem;
+  align-content: center;
+  justify-content: center;
+  }
+  .login-form{
+    padding: 0.5rem;
+    background-color: none;
+    width:  50%;
+  }
+  .user-content{
+    display: none;
+  }
+  .fa:hover{
+   cursor: pointer;
+  }
+  .intro-note{
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 0.5rem;
+  }

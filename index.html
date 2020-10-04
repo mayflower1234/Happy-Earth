@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c7f0d626a8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Happy Earth</title>
+  </head>
+
+  <body>
+    <nav class="header navbar navbar-expand-lg navbar-light bg-light">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div
+        class="collapse navbar-collapse justify-content-around"
+        id="navbarSupportedContent"
+      >
+        <a class="website-logo navbar-brand" href="index.html">
+          Happy Earth
+        </a>
+        <div class="nav-buttons">
+            <button
+            class="likes-list-button likes__icon btn btn-navbar btn-outline-success my-2 my-sm-0"
+            type="submit"
+          >
+          <a href="index.html">
+            Home
+        </a>
+          </button>
+          <button
+            class="likes-list-button likes__icon btn btn-navbar btn-outline-success my-2 my-sm-0"
+            type="submit"
+          >
+            About
+          </button>
+
+          <button
+            class="shopping-list-button btn btn-navbar btn-outline-success my-2 my-sm-0"
+            type="submit"
+          >
+            Saved
+          </button>
+
+          <button class="btn btn-navbar btn-navbar-users" type="submit">
+            <a href="signin.html"
+              >Sign In/Register <i class="fas fa-user-circle"></i
+            ></a>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <h6 class="h6 intro-note">
+        Welcome to Happy Earth website! Search for results from many different databases. Sign up to save results with an account.
+    </h6>
+    <div class="row">
+        <div class="col-md-2 search-content">
+            <div class="search-content">
+                <h1 class="h3"><u>Search:</u></h1>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+                <form>
+                    <h1 class="h4">Time</h4>
+                        <input type="time" id="appt" name="appt"
+       min="00:00" max="24:00" required>
+
+                </form>
+                <form>
+                    <h1 class="h4">Date</h4>
+                        <input type="date" id="start" name="trip-start"
+                        value="2020-10-04"
+                        min="2000-01-01" max="2020-12-31">
+                </form>
+                    <form>
+                    <h1 class="h4">Location</h4>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                          North America
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                          South America
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                          Africa
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                          Europe
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                          Asia
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                          South America
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                          Australia and Oceania
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                          Arctica
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                          Antarctica
+                        </label>
+                      </div>
+                    </form>
+                    <form>
+                        <h1 class="h4">Keywords</h4>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Atmosphere
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Agriculture
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Biosphere
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Natural Disasters
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Fresh Water
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Oceans
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Pollution
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Land Surface
+                            </label>
+                          </div>
+                        </form>
+                        <form>
+                            <h1 class="h4">Database</h4>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                      NASA
+                                    </label>
+                                  </div>
+                        </form>
+            </div>
+          </div>
+        <div class="col-md-2 results-content">
+          <div class="results">
+              <h1 class="h3"><u>Results:</u></h1>
+              <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        Sort by relevancy
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        Sort by date (oldest to newest)
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        Sort by date (newest to oldest)
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        Sort by alphabetical order
+                    </label>
+                  </div>
+              </form>
+            <ul class="results-list list-group list-group-flush">
+                <li class="list-group-item">
+                        <div class="">
+                            <h4 class="h3">Item 1</h4>
+                            <p>Item 1 Description</p>
+                        </div>
+                </li>
+                <li class="list-group-item">
+                        <div class="">
+                            <h4 class="h3">Item 2</h4>
+                            <p>Item 2 Description</p>
+                        </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="">
+                        <h4 class="h3">Item 3</h4>
+                        <p>Item 3 Description</p>
+                    </div>
+            </li>
+            <li class="list-group-item">
+                <div class="">
+                    <h4 class="h3">Item 4</h4>
+                    <p>Item 4 Description</p>
+                </div>
+        </li>
+        <li class="list-group-item">
+            <div class="">
+                <h4 class="h3">Item 5</h4>
+                <p>Item 5 Description</p>
+            </div>
+    </li>
+            </ul>
+          </div>
+          <div class="results-page-buttons justify-content-around">
+            <button class="btn-inline results__btn--prev page-button-prev btn">
+                <p><i class="fa fa-caret-left" aria-hidden="true"></i>Page 1</p>
+            </button>
+            <button class="btn-inline results__btn--next page-button-next btn">
+              <p> Page 2 <i class="fa fa-caret-right" aria-hidden="true"></i></p>
+          </button>
+          </div>
+        </div>
+
+        <div class="col-md-6 results-content">
+            <h1 class="h4"> Item 1</h1>
+            <button type="button" class="btn">
+                <p>Save
+                    <i class="fa fa-heart-o' aria-hidden="true"></i>
+                </p>
+            </button>
+            <ul  class="results-list list-group list-group-flush">
+                <li class="list-group-item">
+                  <h1 class="h5">Date: </h1>
+            </li> 
+            <li class="list-group-item">
+                <h1 class="h5">Time: </h1>
+          </li> 
+          <li class="list-group-item">
+            <h1 class="h5">Location: </h1>
+      </li> 
+      <li class="list-group-item">
+        <h1 class="h5">Keywords: </h1>
+  </li> 
+  <li class="list-group-item">
+    <h1 class="h5">Database: </h1>
+</li> 
+<li class="list-group-item">
+    <h1 class="h5">Details: </h1>
+</li> 
+<li class="list-group-item">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d570787.2876786744!2d-122.57596951152674!3d37.78572566506641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1601819012621!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </li>
+            </ul>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
